@@ -1,0 +1,136 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*-------------------------------------------------------------------------- 
+Common styles  
+---------------------------------------------------------------------------*/
+.fixed-width{
+    width: 1100px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------- 
+Menubars 
+---------------------------------------------------------------------------*/
+
+.navbar{
+    background: linear-gradient(45deg, #c88bca, #a867a7);
+}
+.navbars{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.navbar-right ul{
+    display: flex;
+}
+.navbar-right ul li{
+    list-style: none;
+    margin-left: 50px;
+}
+.navbar-right ul li a{
+    color: white;
+}
+.navbar-right ul li a:hover{
+    color: grey;
+}
+.menu-icon{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------- 
+Media query
+---------------------------------------------------------------------------*/
+/* For mobile:  */
+@media only screen and (max-width:480px){
+    .fixed-width{
+        width: 100%;
+        margin: auto;
+    }
+    .hidden{
+        display: none;
+    }
+    /* Menubars */
+    .navbars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 15px;
+        padding: 15px 0;
+    }
+    .navbar-right ul li{
+        list-style: none;
+        margin-left: 0px;
+        margin-right:20px;
+    }
+}
+
+/* For ipads, tablet:  */
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .fixed-width{
+        width: 100%;
+        margin: auto;
+    }
+    .hidden{
+        display: none;
+    }
+    /* Menubars */
+    .navbars{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 15px;
+        padding: 15px 0;
+    }
+    .navbar-right ul li{
+        list-style: none;
+        margin-left: 0px;
+        margin-right:20px;
+    }
+}
+
+/* For Small screen, laptop:  */
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    .fixed-width{
+        width: 100%;
+        margin: auto;
+    }
+    /* Menubars */
+    .navbars{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        row-gap: 15px;
+        padding: 15px 0;
+    }
+    .navbar-right ul li{
+        list-style: none;
+        margin-left: 0px;
+        margin-right:20px;
+    }
+}
