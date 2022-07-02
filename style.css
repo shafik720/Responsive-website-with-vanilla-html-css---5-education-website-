@@ -1,8 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*-------------------------------------------------------------------------- 
@@ -15,7 +17,16 @@ Common styles
 a{
     text-decoration: none;
 }
-
+.purple-text{
+    color: #DC8CDB;
+}
+.purple-button{
+    padding: 10px 25px;
+    display: inline-block;
+    background: linear-gradient(45deg, #c88bca, #a867a7);
+    color: white;
+    border-radius: 5px;
+}
 /*-------------------------------------------------------------------------- 
 Menubars 
 ---------------------------------------------------------------------------*/
@@ -46,10 +57,55 @@ Menubars
 }
 
 
+/*-------------------------------------------------------------------------- 
+Banner sections 
+---------------------------------------------------------------------------*/
+.banner-section{
+    padding: 80px 0;
+    position: relative;
+}
+.banner-section::before{
+    background: url(images/banner-left-dec.png)no-repeat;
+    background-position: center center;
+    position: absolute;
+    width: 214px;
+    height: 429px;
+    content: '';
+    z-index: -1;
+    left: 0;
+    bottom: 0;
 
-
-
-
+}
+.banner-section::after{
+    background: url(images/banner-right-dec.png)no-repeat;
+    position: absolute;
+    content: '';
+    width: 378px;
+    height: 378px;
+    right: 39px;
+    top: 62px;
+    z-index: -1;
+}
+.banner-sections{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-left p{
+    color: grey;
+}
+.banner-left h1{
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 80px;
+    margin-top: -1px;
+}
+.banner-right{
+    /* border: 1px solid black; */
+    text-align: right;
+}
+.banner-right img{
+    width: 80%;
+}
 
 
 
