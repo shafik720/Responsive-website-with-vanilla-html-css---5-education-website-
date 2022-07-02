@@ -40,7 +40,9 @@ Menubars
     padding: 25px 0;
 }
 .navbar-right ul{
-    display: flex;
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
 }
 .navbar-right ul li{
     list-style: none;
@@ -130,19 +132,74 @@ Media query
     .hidden{
         display: none;
     }
-    /* Menubars */
+    /*---------- Menubars ----------*/
     .navbars{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         row-gap: 15px;
-        padding: 15px 0;
+        padding: 25px 0;
+    }
+    .navbar-right ul {
+        margin: 0;
+        padding: 0;
     }
     .navbar-right ul li{
         list-style: none;
         margin-left: 0px;
         margin-right:20px;
+    }
+
+    /*---------- Banners ----------*/
+    .banner-section{
+        padding: 80px 10px;
+        position: relative;
+    }
+    .banner-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 60px;
+        overflow: hidden;
+    }
+    .banner-section::before{
+        background: url(images/banner-left-dec.png)no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 214px;
+        height: 429px;
+        content: '';
+        z-index: -1;
+        left: 0;
+        bottom: 50px;
+    
+    }
+    .banner-section::after{
+        background: url(images/banner-right-dec.png)no-repeat;
+        position: absolute;
+        content: '';
+        width: 90%;
+        height: 50%;
+        right: 0;
+        top: 516px;
+        z-index: -1;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-left h1{
+        font-size: 2.5em;
+        font-weight: 800;
+        line-height: 80px;
+        margin-top: -1px;
+    }
+    .banner-right{
+        text-align: center;
+    }
+    .banner-right img{
+        width: 90%;
     }
 }
 
@@ -162,6 +219,10 @@ Media query
         align-items: center;
         row-gap: 15px;
         padding: 15px 0;
+    }
+    .navbar-right ul {
+        margin: 0;
+        padding: 0;
     }
     .navbar-right ul li{
         list-style: none;
@@ -183,6 +244,10 @@ Media query
         align-items: center;
         row-gap: 15px;
         padding: 15px 0;
+    }
+    .navbar-right ul {
+        margin: 0;
+        padding: 0;
     }
     .navbar-right ul li{
         list-style: none;
