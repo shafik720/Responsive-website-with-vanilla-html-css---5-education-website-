@@ -75,7 +75,7 @@ Banner sections
     content: '';
     z-index: -1;
     left: 0;
-    bottom: 0;
+    bottom: -100px;
 
 }
 .banner-section::after{
