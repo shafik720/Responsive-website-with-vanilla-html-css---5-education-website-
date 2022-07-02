@@ -229,6 +229,54 @@ Media query
         margin-left: 0px;
         margin-right:20px;
     }
+    /*---------- Banners ----------*/
+    .banner-section{
+        padding: 80px 10px;
+        position: relative;
+    }
+    .banner-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 60px;
+        overflow: hidden;
+    }
+    .banner-section::before{
+        background: url(images/banner-left-dec.png)no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 214px;
+        height: 429px;
+        content: '';
+        z-index: -1;
+        left: 0;
+        bottom: 50px;
+    
+    }
+    .banner-section::after{
+        background: url(images/banner-right-dec.png)no-repeat;
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 516px;
+        z-index: -1;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-left h1{
+        font-size: 2.5em;
+        font-weight: 800;
+        line-height: 80px;
+        margin-top: -1px;
+    }
+    .banner-right{
+        text-align: center;
+    }
+    .banner-right img{
+        width: 90%;
+    }
 }
 
 /* For Small screen, laptop:  */
@@ -253,5 +301,53 @@ Media query
         list-style: none;
         margin-left: 0px;
         margin-right:20px;
+    }
+    /*---------- Banners ----------*/
+    .banner-section{
+        padding: 80px 10px;
+        position: relative;
+    }
+    .banner-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 60px;
+        overflow: hidden;
+    }
+    .banner-section::before{
+        background: url(images/banner-left-dec.png)no-repeat;
+        background-position: center center;
+        position: absolute;
+        width: 214px;
+        height: 429px;
+        content: '';
+        z-index: -1;
+        left: 0;
+        bottom: 50px;
+    
+    }
+    .banner-section::after{
+        background: url(images/banner-right-dec.png)no-repeat;
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 516px;
+        z-index: -1;
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-left h1{
+        font-size: 2.5em;
+        font-weight: 800;
+        line-height: 80px;
+        margin-top: -1px;
+    }
+    .banner-right{
+        text-align: center;
+    }
+    .banner-right img{
+        width: 90%;
     }
 }
