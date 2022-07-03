@@ -256,13 +256,50 @@ Course sections
     border: none;
 }
 
+/*-------------------------------------------------------------------------- 
+Discount sections 
+---------------------------------------------------------------------------*/
+.discount-section{
+    background: url(images/cta-bg.png) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 150px 0;
+    margin: 50px 0;
+}
+.discount-sections{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 100px;
+}
+.discount-sections .discount-left img{
+    width: 100%;
+}
+.discount-left{
+    text-align: right;
+}
 
-
-
-
-
-
-
+.discount-right{
+    color: white;
+    width: 50%;
+}
+.discount-right h1{
+    font-size: 4em;
+    line-height: 70px;
+    margin-top: -5px;
+}
+.discount-right p{
+    margin: 30px 0;
+}
+.discount-right a{
+    padding: 10px 25px;
+    color: #a867a7;
+    background: white;
+    border-radius: 5px;
+    font-weight: 300;
+    display: inline-block;
+    margin-top: 25px;
+}
 
 
 
@@ -410,6 +447,32 @@ For mobile:
     .course-right-second{
         width: 100%;
     }
+    /*---------- Discount ----------*/
+    .discount-section{
+        background: url(images/cta-bg.png) no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        padding: 100px 15px;
+        margin: 50px 0;
+    }
+    .discount-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 0px;
+        row-gap: 30px;
+    }
+    .discount-right{
+        color: white;
+        width: 100%;
+        text-align:justify
+    }
+    .discount-right h1{
+        font-size: 3em;
+        line-height: 60px;
+        margin-top: -5px;
+    }
 }
 
 /*--------------------------------------------------- 
@@ -517,6 +580,32 @@ For ipads, tablet:
     }
     .course-right-second{
         width: 100%;
+    }
+    /*---------- Discount ----------*/
+    .discount-section{
+        background: url(images/cta-bg.png) no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        padding: 100px 35px;
+        margin: 50px 0;
+    }
+    .discount-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0px;
+        row-gap: 30px;
+    }
+    .discount-right{
+        color: white;
+        width: 100%;
+        text-align:justify
+    }
+    .discount-right h1{
+        font-size: 3em;
+        line-height: 60px;
+        margin-top: -5px;
     }
 }
 
@@ -642,5 +731,31 @@ For ipads, tablet:
     }
     .course-right-second{
         width: 100%;
+    }
+    /*---------- Discount ----------*/
+    .discount-section{
+        background: url(images/cta-bg.png) no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        padding: 100px 35px;
+        margin: 50px 0;
+    }
+    .discount-sections{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0px;
+        row-gap: 30px;
+    }
+    .discount-right{
+        color: white;
+        width: 100%;
+        text-align:justify
+    }
+    .discount-right h1{
+        font-size: 3em;
+        line-height: 60px;
+        margin-top: -5px;
     }
 }
