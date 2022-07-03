@@ -192,16 +192,52 @@ Course sections
     margin: 15px 0;
     transition: all 0.3s;
 }
-
 .course-left a:hover{
     border: 4px solid #a867a7;
     color: #a867a7;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.582);
 }
 
-
-
-
+.course-bottom{
+    display: flex;
+    column-gap: 80px;
+    margin: 50px 0;
+}
+.course-right{
+    display: flex;
+    column-gap: 40px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.582);
+    padding: 45px 25px 45px 0;
+    border-radius: 15px;
+    width:75%;
+}
+.course-right p{
+    color: grey;
+}
+.course-right a{
+    color: #a867a7;
+    text-decoration: underline;
+}
+.course-right-second{
+    width: 50%;
+}
+.course-right-first img{
+    border-radius: 20px 0px 0px 20px;
+}
+.course-duration{
+    display: flex;
+    margin: 35px 0;
+}
+.course-duration h3{
+    border-right: 2px solid black;
+    margin-right: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.course-duration h3:last-child{
+    border: none;
+}
 
 
 
