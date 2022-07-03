@@ -218,12 +218,28 @@ Course sections
     color: #a867a7;
     text-decoration: underline;
 }
-.course-right-second{
-    width: 50%;
+.course-right-first{
+    position: relative;
+}
+.course-right-first span{
+    background: linear-gradient(360deg, #dda1bf,#c88bca ) ;
+    padding: 15px 5px;
+    border-radius:5px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 .course-right-first img{
     border-radius: 20px 0px 0px 20px;
 }
+.course-right-second{
+    width: 50%;
+}
+
 .course-duration{
     display: flex;
     margin: 35px 0;
