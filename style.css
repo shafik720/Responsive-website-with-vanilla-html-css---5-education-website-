@@ -400,7 +400,7 @@ Contact sections
     column-gap: 20px;
     border-radius: 15px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.582);
-    z-index: 1000;
+    z-index: 10;
     position: absolute;
     bottom: -7%;
     left: 16%;
@@ -414,7 +414,7 @@ Contact sections
     column-gap: 20px;
     border-radius: 15px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.582);
-    z-index: 1000;
+    z-index: 10;
     position: absolute;
     bottom: -7%;
     left: 38%;
@@ -436,10 +436,57 @@ Contact sections
 }
 
 
+.contact-form{
+    position: absolute;
+    z-index: 110;
+    border-radius: 10px;
+    background: white;
+    width: 450px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.582);
+    top:60px;
+    right: 4%;
+}
+.contact-forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contact-forms h2{
+    margin-top: -10px;
+    font-size: 2em;
+    margin-bottom: -5px;
+}
+.contact-forms p{
+    color: grey;
+}
 
-
-
-
+.input-forms{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 25px;
+}
+.input-forms input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    background: #F4F7FB;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.contact-button{
+    text-align: right;
+    margin-top: 15px;
+}
+.contact-button a{
+    padding: 10px 20px;
+    background: linear-gradient(45deg,#a867a7, #e59be4);
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
 
 
 
