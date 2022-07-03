@@ -265,6 +265,7 @@ Discount sections
     object-fit: cover;
     padding: 150px 0;
     margin: 50px 0;
+    width: 100%;
 }
 .discount-sections{
     display: flex;
@@ -301,13 +302,38 @@ Discount sections
     margin-top: 25px;
 }
 
-
-
-
-
-
-
-
+/*-------------------------------------------------------------------------- 
+Testimonial sections 
+---------------------------------------------------------------------------*/
+.testimonial-top{
+    text-align: center;
+    margin: 100px 0;
+}
+.testimonial-card{
+    width: 330px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    padding: 15px 25px;
+}
+.testimonial-card:hover{
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.582);
+}
+.testimonial-card p{
+    font-style: italic;
+    color: grey;
+}
+.testimonial-card-bottom-author h2{
+    margin-bottom: -20px;
+}
+.testimonial-card-bottom-author h4{
+    font-weight: 500;
+    font-size: 14px;
+}
+.testimonial-card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
