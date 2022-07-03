@@ -309,9 +309,15 @@ Testimonial sections
     text-align: center;
     margin: 100px 0;
 }
+.testimonial-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
 .testimonial-card{
     width: 330px;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: all 0.2s;
     padding: 15px 25px;
 }
@@ -324,6 +330,7 @@ Testimonial sections
 }
 .testimonial-card-bottom-author h2{
     margin-bottom: -20px;
+    font-size: 1.2em;
 }
 .testimonial-card-bottom-author h4{
     font-weight: 500;
