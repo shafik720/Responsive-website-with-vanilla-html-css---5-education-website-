@@ -141,6 +141,97 @@ Service sections
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.582);
 }
 
+/*-------------------------------------------------------------------------- 
+Course sections 
+---------------------------------------------------------------------------*/
+.course-section{
+    position: relative;
+}
+.course-section::before{
+    background: url(images/our-courses-left-dec.png)no-repeat;
+    position: absolute;
+    width: 291px;
+    height: 231px;
+    content: '';
+    left: 20px;
+}
+.course-section::after{
+    background: url(images/our-courses-right-dec.png)no-repeat;
+    position: absolute;
+    width: 291px;
+    height: 231px;
+    content: '';
+    right: 20px;
+    top: 0;
+}
+.course-top{
+    text-align: center;
+    width: 350px;
+    padding-top: 120px ;
+    margin: auto;
+}
+.course-top p{
+    text-transform: uppercase;
+    color: grey;
+}
+
+.course-left{
+    display: flex;
+    flex-direction: column;
+}
+.course-left a{
+    display: inline-block;
+    width: 300px;
+    border: 4px solid rgba(128, 128, 128, 0.74);
+    color: black;
+    font-weight: 800;
+    font-size: 1.3em;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    margin: 15px 0;
+    transition: all 0.3s;
+}
+
+.course-left a:hover{
+    border: 4px solid #a867a7;
+    color: #a867a7;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.582);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
