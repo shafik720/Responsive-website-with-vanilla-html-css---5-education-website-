@@ -309,7 +309,8 @@ Testimonial sections
 ---------------------------------------------------------------------------*/
 .testimonial-section{
     position: relative;
-    padding: 100px 20px;
+    padding-top: 100px;
+    padding-bottom: 200px;
     overflow: hidden;
 }
 .testimonial-section::before{
@@ -326,10 +327,10 @@ Testimonial sections
     background: url(images/testimonials-right-dec.png) no-repeat;
     position: absolute;
     width: 632px;
-    height: 352px;
+    height: 100%;
     content: '';
     right: 0;
-    bottom: -120px;
+    bottom: -60%;
     z-index: -1;
 }
 .testimonial-top{
@@ -370,14 +371,69 @@ Testimonial sections
     align-items: center;
 }
 
+/*-------------------------------------------------------------------------- 
+Contact sections 
+---------------------------------------------------------------------------*/
+.contact-section{
+    margin: 100px 0;
+    position: relative;
+}
+.contact-section::before{
+    background: url(images/footer-left-dec.png) no-repeat;
+    content: '';
+    z-index: -1;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.map iframe{
+    border-radius: 25px;
+}
 
 
-
-
-
-
-
-
+.map-contact-card{
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.582);
+    z-index: 1000;
+    position: absolute;
+    bottom: -7%;
+    left: 16%;
+    background: white;
+}
+.map-contact-card-2{
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.582);
+    z-index: 1000;
+    position: absolute;
+    bottom: -7%;
+    left: 38%;
+    background: white;
+}
+.phone-logo{
+    background: #a867a7;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 50%;
+}
+.phone-number{
+    text-transform: uppercase;
+}
+.phone-number h3{
+    margin-bottom: -20px;
+    font-size: 17px;
+    font-weight: 800;
+}
 
 
 
