@@ -911,6 +911,68 @@ For ipads, tablet:
         bottom: -120px;
         z-index: -1;
     }
+    /*---------- Contact & Footer ----------*/
+    .map{
+        text-align: center;
+    }
+    .map iframe{
+        border-radius: 25px;
+        width: 95%;
+    }
+    .map-contact{
+        display: flex;
+        row-gap: 25px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        position: absolute;
+        left:10%;
+        top: 25%;
+        z-index: 2000;
+    }
+    .map-contact-card{
+        width: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.582);
+        background: white;
+    }
+    .map-contact-card-2{
+        width: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.582);
+        background: white;
+    }
+
+    .contact-form{
+        position: relative;
+        z-index: 110;
+        border-radius: 10px;
+        background: white;
+        width: 90%;
+        padding: 30px 10px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.582);
+        top:60px;
+        right: 0;
+        margin: auto;
+    }
+    .footer{
+        position: absolute;
+        bottom: 5%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+    .footer-top{
+        display: flex;
+    }
 }
 
 /*-----------------------------------------
